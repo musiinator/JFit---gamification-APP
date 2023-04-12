@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
-	<h1>Welcome to JFit!</h1>
+	<h1>JFit - documentation</h1>
 	<h2>Description</h2>
 	<p>JFit is a fitness gamification app that helps you stay motivated and achieve your fitness goals. With JFit, you can earn rewards and badges by completing or creating quests related to your favorite type of exercises.</p>
 <div>
