@@ -68,9 +68,13 @@ public class BadgesController {
      * Sets the badges to their original state
      */
     public void setBadges() {
-        if(service.findUserByUsername(username).getBadges() == null || service.findUserByUsername(username).getBadges().equals("")){
-            return;
-        }
+        User user = service.findUserByUsername(username);
+        if(user.getBadges() == null)
+            user.setBadges("");
+        if(user.getTokens() > 2000)
+            user.setBadges(user.getBadges() + "zeusBadge,");
+        service.updateUser(user);
+
         String[] badges = service.findUserByUsername(username).getBadges().split(",");
         for (String badge : badges) {
             switch (badge) {

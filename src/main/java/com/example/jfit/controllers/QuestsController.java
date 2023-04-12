@@ -281,6 +281,9 @@ public class QuestsController{
         String badges = "";
         if(user.getBadges() != null) {
             badges = user.getBadges() + ",";
+            if(user.getBadges().split(",").length == 5){
+                badges += "zeusBadge,"; //if the user has all the badges, he gets the zeus badge
+            }
         }
         switch (type) {
             case "Cardio - treadmill":
@@ -290,7 +293,6 @@ public class QuestsController{
                 break;
             case "Cardio - bicycle":
                 badges += "bicycleBadge,";
-                System.out.println(badges);
                 user.setBadges(badges);
                 service.updateUser(user);
                 break;
