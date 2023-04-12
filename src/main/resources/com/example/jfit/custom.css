@@ -1,0 +1,101 @@
+.textfield{
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-color: transparent;
+    -fx-prompt-text-fill: black;
+}
+
+.textfieldLogin{
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-color: transparent;
+}
+
+.logInButton{
+    -fx-background-color: #47B7B7;
+    -fx-background-radius: 100;
+}
+
+.logInButton:hover{
+    -fx-background-color: #409090;
+    -fx-background-radius: 100;
+}
+
+.Xbutton{
+    -fx-background-color: transparent;
+}
+
+.Xbutton:hover{
+    -fx-background-color: rgba(180, 0, 0, 0.5);
+}
+
+.minimizeButton{
+    -fx-background-color: transparent;
+}
+
+.minimizeButton:hover{
+    -fx-background-color: rgba(180, 180, 180, 0.4);
+}
+
+.xButtonMenu{
+    -fx-background-color: transparent;
+}
+
+.xButtonMenu:hover{
+    -fx-background-color: rgba(250, 0, 0, 0.6);
+}
+
+.minimizeButtonMenu{
+    -fx-background-color: transparent;
+}
+
+.minimizeButtonMenu:hover{
+    -fx-background-color: rgba(180, 180, 180, 0.5);
+}
+
+.menuLabels:hover{
+    -fx-background-color: rgba(0, 0, 0, 0.2);
+    -fx-opacity: 1;
+}
+
+.table-view{
+    -fx-background-color: transparent;
+    -fx-grid-lines-visible: false;
+    -fx-border-width: 0;
+}
+
+.table-column{
+    -fx-background-color: #44B8B8;
+    -fx-alignment: CENTER;
+    -fx-border-width: 0;
+}
+
+.questsButtons{
+    -fx-background-color: #44B8B8;
+    -fx-background-radius: 100;
+}
+
+.questsButtons:hover{
+    -fx-background-color: #409090;
+    -fx-background-radius: 100;
+}
+
+.list-view{
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+    -fx-font-size: 18;
+}
+
+.list-cell{
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+}
+
+.combo-box{
+    -fx-background-color: transparent;
+}
+
+.okButton{
+    -fx-background-color: white;
+    -fx-background-radius: 100;
+}

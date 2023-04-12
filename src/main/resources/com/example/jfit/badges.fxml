@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="badgesAnchorPane" onDragDetected="#setDraggable" prefHeight="500.0" prefWidth="850.0" stylesheets="@custom.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jfit.controllers.BadgesController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="850.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../Images/backgoundMenu.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bodyBadge" fitHeight="194.0" fitWidth="190.0" layoutX="55.0" layoutY="80.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="D:\Anul 2\semestrul2\JFit\src\main\resources\Images\absBadge.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-0.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="armBadge" fitHeight="179.0" fitWidth="173.0" layoutX="350.0" layoutY="85.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="D:\Anul 2\semestrul2\JFit\src\main\resources\Images\bicepsBadge.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-0.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="legBadge" fitHeight="164.0" fitWidth="182.0" layoutX="627.0" layoutY="93.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="D:\Anul 2\semestrul2\JFit\src\main\resources\Images\legBadge.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-0.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="runBadge" fitHeight="154.0" fitWidth="154.0" layoutX="73.0" layoutY="297.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="D:\Anul 2\semestrul2\JFit\src\main\resources\Images\runBadge.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-0.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="bicycleBadge" fitHeight="154.0" fitWidth="164.0" layoutX="343.0" layoutY="297.0" opacity="0.5" pickOnBounds="true">
+         <image>
+            <Image url="D:\Anul 2\semestrul2\JFit\src\main\resources\Images\bicycleBadge.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-0.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="zeusBadge" fitHeight="217.0" fitWidth="220.0" layoutX="599.0" layoutY="253.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="D:\Anul 2\semestrul2\JFit\src\main\resources\Images\zeusBadge.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-0.5" />
+         </effect>
+      </ImageView>
+      <Label layoutX="360.0" layoutY="34.0" prefHeight="17.0" prefWidth="143.0" text="Your badges">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="minimizeButton" layoutX="756.0" layoutY="-2.0" mnemonicParsing="false" onAction="#minimize" prefHeight="25.0" prefWidth="47.0" styleClass="minimizeButtonMenu" stylesheets="@custom.css" text="–">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Cooper Black" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="803.0" layoutY="-2.0" mnemonicParsing="false" onAction="#close" prefHeight="25.0" prefWidth="47.0" styleClass="xButtonMenu" stylesheets="@custom.css" text="X" fx:id="xButton">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="29.0" layoutY="17.0" onMouseClicked="#backToMenu" text="&lt; Back">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <HBox layoutX="605.0" layoutY="7.0" prefHeight="30.0" prefWidth="90.0">
+         <children>
+            <ImageView fitHeight="33.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="D:\Anul 2\semestrul2\JFit\src\main\resources\Images\token.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="tokenLabel" alignment="CENTER" prefHeight="33.0" prefWidth="59.0" text="1111">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Label fx:id="usernameLabel" layoutX="686.0" layoutY="474.0" prefHeight="24.0" prefWidth="164.0" text="Logged in as:">
+         <font>
+            <Font name="Bell MT" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
